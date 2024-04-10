@@ -51,6 +51,21 @@ ___
 * Input text: `I was enjoying the sun, but then a huge cloud came and covered the sky.`
 * Expected completion: `She was enjoying the sun, but then a huge cloud came and covered the sky.`
 
+* Solution:
+  ```
+  Example Input: I was enjoying the movie.
+
+  Example Output: She was enjoying the movie.
+  
+  Example 2 Input: I wear only green shirts.
+  
+  Example 2 Output: She wears only green shirts.
+  
+  Input: I was enjoying the sun, but then a huge cloud came and covered the sky.
+  
+  Output:
+  ```
+
 ___
 
 ## :question: Exercise 6 - Multiple Tasks
@@ -64,6 +79,30 @@ ___
       "negated": "I was not enjoying the sun, and no huge cloud came and covered the sky.",
       "third_person": "She was enjoying the sun, but then a huge cloud came and covered the sky."
   }
+  ```
+* Solution:
+  ```
+  Example Input: I was playing in a football team last year.
+
+  Example Output:
+  {
+      "translated": "Ich spielte in einem Fußballverein letztes Jahr.",
+      "negated": "I was playing in a football team last year.",
+      "third_person": "She was playing in a football team last year."
+  }
+  
+  Example 2 Input: I work at a company called DATEV.
+  
+  Example 2 Output:
+  {
+      "translated": "Ich arbeite bei einer Firma namens DATEV.",
+      "negated": "I work not at a company called DATEV.",
+      "third_person": "She works at a company called DATEV."
+  }
+  
+  Input: I was enjoying the sun, but then a huge cloud came and covered the sky.
+  
+  Output: 
   ```
 
 ___
@@ -92,7 +131,40 @@ ___
       "dob": "09/09/1989"
   }
   ```
+* Solution:
+  ```
+  Example Input:
 
+  Hello, my name is Thomas Müller. I lost my Credit card on August 17th, and I would like to request its cancellation. The last purchase I made was of a Chicken parmigiana dish at Contoso Restaurant, located near the Hollywood Museum, for $40. Below is my personal information for validation:
+  Profession: Accountant
+  Social Security number is 444-55-8888
+  Date of birth: 1-2-1990
+  Phone number: 949-555-0110
+  Personal address: 1234 Hollywood Boulevard Los Angeles CA
+  Linked email account: mateo@contosorestaurant.com
+  Swift code: CHASUS33XXX
+  
+  Example Output:
+  
+  {
+      "reason": "Lost card",
+      "classified_reason": "lost_card",
+      "name": "Thomas Müller",
+      "ssn": "444-55-8888",
+      "dob": "01/02/1990"
+  }
+  
+  Input:
+  
+  Hello, my name is Mateo Gomez. I lost my Credit card on August 17th, and I would like to request its cancellation. The last purchase I made was of a Chicken parmigiana dish at Contoso Restaurant, located near the Hollywood Museum, for $40. Below is my personal information for validation:
+  Profession: Accountant
+  Social Security number is 123-45-6789
+  Date of birth: 9-9-1989
+  Phone number: 949-555-0110
+  Personal address: 1234 Hollywood Boulevard Los Angeles CA
+  Linked email account: mateo@contosorestaurant.com
+  Swift code: CHASUS33XXX
+  ```
 ___
 
 ## :question: Exercise 8 - Fashion product description
@@ -109,6 +181,42 @@ ___
 * Expected completion (or similar):
   ```
   Stay warm and stylish this winter with our cozy cotton sweaters, perfect for the fashion-forward teenager. Refresh your wardrobe with the latest winter styles from our collection.
+  ```
+
+* Solution:
+
+  ```
+  Example Input:
+
+  Season: Summer
+  Style: Shirt
+  Gender: Male
+  Target group: Teenager
+  Material: Cotton
+  
+  Example Output:
+  
+  Stay cool and stylish this summer with our latest cotton shirts designed for teenage guys, perfect for embracing the season's vibes.
+  
+  Example 2 Input:
+  
+  Season: Winter
+  Style: Pants
+  Gender: Female
+  Target group: Teenager
+  Material: Cotton
+  
+  Example 2 Output:
+  
+  Elevate your winter wardrobe with our cozy cotton pants tailored for teenage girls, ensuring both warmth and style throughout the season.
+  
+  Input:
+  
+  Season: Winter
+  Style: Sweater
+  Gender: Female
+  Target group: Teenager
+  Material: Cotton
   ```
 
 ___
@@ -165,23 +273,51 @@ ___
 * Exercise: Write a few-shot learned prompt that classifies a movie summary.
 * Data samples:
   ```
-  Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.
-  ['Action', 'Adventure', 'Science Fiction’]
+    Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.
+    As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who
+    can conquer their fear will survive.
+    ['Action', 'Adventure', 'Science Fiction’]
+  
+    A botched store robbery places Wonder Woman in a global battle against a powerful and mysterious ancient force that puts her powers in jeopardy.
+    ['Action', 'Adventure', 'Fantasy']
+  
+    After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies,
+    the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.
+    ['Adventure', 'Science Fiction', 'Action']
+  
+    A widowed new dad copes with doubts, fears, heartache and dirty diapers as he sets out to raise his daughter on his own. Inspired by a true story.
+    ['Drama', 'Family', 'Comedy’]
+  
+    New data:
+    Harry, Ron and Hermione walk away from their last year at Hogwarts to find and destroy the remaining Horcruxes, putting an end to Voldemort's bid for immortality.
+    But with Harry's beloved Dumbledore dead and Voldemort's unscrupulous Death Eaters on the loose, the world is more dangerous than ever.
+    ```
+  * Expected completion: Classification of the new data point
+  
+  * Solution:
+    ```
+    Example Input: Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his
+    family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest
+    potential-only those who can conquer their fear will survive.
+  
+    Example Output: ['Action', 'Adventure', 'Science Fiction’]
+    
+    Example 2 Input: A botched store robbery places Wonder Woman in a global battle against a powerful and mysterious ancient force that puts her powers in jeopardy.
+    
+    Example 2 Output: ['Action', 'Adventure', 'Fantasy']
+    
+    Example 3 Input: After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies,
+    the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.
+    
+    Example 3 Output: ['Adventure', 'Science Fiction', 'Action']
+    
+    Example 4 Input: A widowed new dad copes with doubts, fears, heartache and dirty diapers as he sets out to raise his daughter on his own. Inspired by a true story.
+    Example 4 Output: ['Drama', 'Family', 'Comedy’]
+    
+    Input: Harry, Ron and Hermione walk away from their last year at Hogwarts to find and destroy the remaining Horcruxes, putting an end to Voldemort's bid for immortality.
+    But with Harry's beloved Dumbledore dead and Voldemort's unscrupulous Death Eaters on the loose, the world is more dangerous than ever.
 
-  A botched store robbery places Wonder Woman in a global battle against a powerful and mysterious ancient force that puts her powers in jeopardy.
-  ['Action', 'Adventure', 'Fantasy']
-
-  After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.
-  ['Adventure', 'Science Fiction', 'Action']
-
-  A widowed new dad copes with doubts, fears, heartache and dirty diapers as he sets out to raise his daughter on his own. Inspired by a true story.
-  ['Drama', 'Family', 'Comedy’]
-
-  New data:
-  Harry, Ron and Hermione walk away from their last year at Hogwarts to find and destroy the remaining Horcruxes, putting an end to Voldemort's bid for immortality. But with Harry's beloved Dumbledore dead and Voldemort's unscrupulous Death Eaters on the loose, the world is more dangerous than ever.
-  ```
-* Expected completion: Classification of the new data point
-
+    ```
 ___
 
 ## :question: Exercise 12 - NL to SQL with Codex
