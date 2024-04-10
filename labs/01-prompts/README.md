@@ -84,25 +84,25 @@ ___
   ```
   Example Input: I was playing in a football team last year.
 
-Example Output:
-{
-    "translated": "Ich spielte in einem Fußballverein letztes Jahr.",
-    "negated": "I was playing in a football team last year.",
-    "third_person": "She was playing in a football team last year."
-}
-
-Example 2 Input: I work at a company called DATEV.
-
-Example 2 Output:
-{
-    "translated": "Ich arbeite bei einer Firma namens DATEV.",
-    "negated": "I work not at a company called DATEV.",
-    "third_person": "She works at a company called DATEV."
-}
-
-Input: I was enjoying the sun, but then a huge cloud came and covered the sky.
-
-Output: 
+  Example Output:
+  {
+      "translated": "Ich spielte in einem Fußballverein letztes Jahr.",
+      "negated": "I was playing in a football team last year.",
+      "third_person": "She was playing in a football team last year."
+  }
+  
+  Example 2 Input: I work at a company called DATEV.
+  
+  Example 2 Output:
+  {
+      "translated": "Ich arbeite bei einer Firma namens DATEV.",
+      "negated": "I work not at a company called DATEV.",
+      "third_person": "She works at a company called DATEV."
+  }
+  
+  Input: I was enjoying the sun, but then a huge cloud came and covered the sky.
+  
+  Output: 
   ```
 
 ___
