@@ -183,6 +183,42 @@ ___
   Stay warm and stylish this winter with our cozy cotton sweaters, perfect for the fashion-forward teenager. Refresh your wardrobe with the latest winter styles from our collection.
   ```
 
+* Solution:
+
+  ```
+  Example Input:
+
+  Season: Summer
+  Style: Shirt
+  Gender: Male
+  Target group: Teenager
+  Material: Cotton
+  
+  Example Output:
+  
+  Stay cool and stylish this summer with our latest cotton shirts designed for teenage guys, perfect for embracing the season's vibes.
+  
+  Example 2 Input:
+  
+  Season: Winter
+  Style: Pants
+  Gender: Female
+  Target group: Teenager
+  Material: Cotton
+  
+  Example 2 Output:
+  
+  Elevate your winter wardrobe with our cozy cotton pants tailored for teenage girls, ensuring both warmth and style throughout the season.
+  
+  Input:
+  
+  Season: Winter
+  Style: Sweater
+  Gender: Female
+  Target group: Teenager
+  Material: Cotton
+  ```
+
 ___
 
 ## :question: Exercise 9 - Write a Blog Post
