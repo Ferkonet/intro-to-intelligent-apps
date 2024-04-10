@@ -51,6 +51,21 @@ ___
 * Input text: `I was enjoying the sun, but then a huge cloud came and covered the sky.`
 * Expected completion: `She was enjoying the sun, but then a huge cloud came and covered the sky.`
 
+* Solution:
+  ```
+  Example Input: I was enjoying the movie.
+
+  Example Output: She was enjoying the movie.
+  
+  Example 2 Input: I wear only green shirts.
+  
+  Example 2 Output: She wears only green shirts.
+  
+  Input: I was enjoying the sun, but then a huge cloud came and covered the sky.
+  
+  Output:
+  ```
+
 ___
 
 ## :question: Exercise 6 - Multiple Tasks
