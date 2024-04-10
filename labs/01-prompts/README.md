@@ -300,24 +300,24 @@ ___
     family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest
     potential-only those who can conquer their fear will survive.
   
-  Example Output: ['Action', 'Adventure', 'Science Fiction’]
-  
-  Example 2 Input: A botched store robbery places Wonder Woman in a global battle against a powerful and mysterious ancient force that puts her powers in jeopardy.
-  
-  Example 2 Output: ['Action', 'Adventure', 'Fantasy']
-  
-  Example 3 Input: After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies,
-  the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.
-  
-  Example 3 Output: ['Adventure', 'Science Fiction', 'Action']
-  
-  Example 4 Input: A widowed new dad copes with doubts, fears, heartache and dirty diapers as he sets out to raise his daughter on his own. Inspired by a true story.
-  Example 4 Output: ['Drama', 'Family', 'Comedy’]
-  
-  Input: Harry, Ron and Hermione walk away from their last year at Hogwarts to find and destroy the remaining Horcruxes, putting an end to Voldemort's bid for immortality.
-  But with Harry's beloved Dumbledore dead and Voldemort's unscrupulous Death Eaters on the loose, the world is more dangerous than ever.
+    Example Output: ['Action', 'Adventure', 'Science Fiction’]
+    
+    Example 2 Input: A botched store robbery places Wonder Woman in a global battle against a powerful and mysterious ancient force that puts her powers in jeopardy.
+    
+    Example 2 Output: ['Action', 'Adventure', 'Fantasy']
+    
+    Example 3 Input: After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies,
+    the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.
+    
+    Example 3 Output: ['Adventure', 'Science Fiction', 'Action']
+    
+    Example 4 Input: A widowed new dad copes with doubts, fears, heartache and dirty diapers as he sets out to raise his daughter on his own. Inspired by a true story.
+    Example 4 Output: ['Drama', 'Family', 'Comedy’]
+    
+    Input: Harry, Ron and Hermione walk away from their last year at Hogwarts to find and destroy the remaining Horcruxes, putting an end to Voldemort's bid for immortality.
+    But with Harry's beloved Dumbledore dead and Voldemort's unscrupulous Death Eaters on the loose, the world is more dangerous than ever.
 
-  ```
+    ```
 ___
 
 ## :question: Exercise 12 - NL to SQL with Codex
