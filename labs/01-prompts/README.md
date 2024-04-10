@@ -131,7 +131,40 @@ ___
       "dob": "09/09/1989"
   }
   ```
+* Solution:
+  ```
+  Example Input:
 
+  Hello, my name is Thomas Müller. I lost my Credit card on August 17th, and I would like to request its cancellation. The last purchase I made was of a Chicken parmigiana dish at Contoso Restaurant, located near the Hollywood Museum, for $40. Below is my personal information for validation:
+  Profession: Accountant
+  Social Security number is 444-55-8888
+  Date of birth: 1-2-1990
+  Phone number: 949-555-0110
+  Personal address: 1234 Hollywood Boulevard Los Angeles CA
+  Linked email account: mateo@contosorestaurant.com
+  Swift code: CHASUS33XXX
+  
+  Example Output:
+  
+  {
+      "reason": "Lost card",
+      "classified_reason": "lost_card",
+      "name": "Thomas Müller",
+      "ssn": "444-55-8888",
+      "dob": "01/02/1990"
+  }
+  
+  Input:
+  
+  Hello, my name is Mateo Gomez. I lost my Credit card on August 17th, and I would like to request its cancellation. The last purchase I made was of a Chicken parmigiana dish at Contoso Restaurant, located near the Hollywood Museum, for $40. Below is my personal information for validation:
+  Profession: Accountant
+  Social Security number is 123-45-6789
+  Date of birth: 9-9-1989
+  Phone number: 949-555-0110
+  Personal address: 1234 Hollywood Boulevard Los Angeles CA
+  Linked email account: mateo@contosorestaurant.com
+  Swift code: CHASUS33XXX
+  ```
 ___
 
 ## :question: Exercise 8 - Fashion product description
